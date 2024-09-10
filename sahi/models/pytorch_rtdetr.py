@@ -61,8 +61,8 @@ class RTDetrPyTorchDetectionModel(DetectionModel):
         # set category_mapping
         if self.category_mapping is None:
             self.category_mapping = {
-                0: "Саженец (high)",
-                1: "Хвоя (low)",
+                "0": "Саженец (high)",
+                "1": "Хвоя (low)",
             }
 
     def load_state_dict(self, path):
